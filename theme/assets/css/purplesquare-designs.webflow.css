@@ -1232,6 +1232,12 @@ figcaption {
   color: var(--purple);
 }
 
+.success-message-2 {
+  background-color: var(--purple);
+  color: var(--white-smoke);
+  text-align: center;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 64px;

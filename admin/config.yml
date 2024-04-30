@@ -480,11 +480,17 @@ collections:
             label: Text
             name: '-7c112e99'
             widget: string
-          - hint: >-
-              Original text: © 2026 PURPLE SQUARE. All rights reserved, key:
-              -346f03a
+          - hint: 'Original text: © , key: 1497'
             label: Text
-            name: '-346f03a'
+            name: '1497'
+            widget: string
+          - hint: 'Original text: 2024, key: 177500'
+            label: Text
+            name: '177500'
+            widget: string
+          - hint: "Original text: \_\_PURPLE SQUARE. All rights reserved, key: 7956d05f"
+            label: Text
+            name: 7956d05f
             widget: string
           - hint: 'Original text: Get In Touch , key: 4cf27bb2'
             label: Text
@@ -513,6 +519,10 @@ collections:
           - hint: 'Original text: Message, key: -63dc6819'
             label: Text
             name: '-63dc6819'
+            widget: string
+          - hint: "Original text: Thank you. Your message has been received.\_\_We will be in touch with you soon., key: f95c31d"
+            label: Text
+            name: f95c31d
             widget: string
           - hint: 'Original text: Style Guide, key: -7aba473'
             label: Text
