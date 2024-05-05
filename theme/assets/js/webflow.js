@@ -770,7 +770,7 @@
         _.VERSION = "1.6.0-Webflow";
         var breaker = {};
         var ArrayProto = Array.prototype, ObjProto = Object.prototype, FuncProto = Function.prototype;
-        var push = ArrayProto.push, slice = ArrayProto.slice, concat = ArrayProto.concat, toString = ObjProto.toString, hasOwnProperty2 = ObjProto.hasOwnProperty;
+        var push = ArrayProto.push, slice = ArrayProto.slice, concat = ArrayProto.concat, toString = ObjProto.toString, hasOwnProperty = ObjProto.hasOwnProperty;
         var nativeForEach = ArrayProto.forEach, nativeMap = ArrayProto.map, nativeReduce = ArrayProto.reduce, nativeReduceRight = ArrayProto.reduceRight, nativeFilter = ArrayProto.filter, nativeEvery = ArrayProto.every, nativeSome = ArrayProto.some, nativeIndexOf = ArrayProto.indexOf, nativeLastIndexOf = ArrayProto.lastIndexOf, nativeIsArray = Array.isArray, nativeKeys = Object.keys, nativeBind = FuncProto.bind;
         var each = _.each = _.forEach = function(obj, iterator, context) {
           if (obj == null)
@@ -922,7 +922,7 @@
           return keys;
         };
         _.has = function(obj, key2) {
-          return hasOwnProperty2.call(obj, key2);
+          return hasOwnProperty.call(obj, key2);
         };
         _.isObject = function(obj) {
           return obj === Object(obj);
@@ -1419,11 +1419,11 @@
     "node_modules/lodash/_getRawTag.js"(exports2, module2) {
       var Symbol2 = require_Symbol();
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       var nativeObjectToString = objectProto.toString;
       var symToStringTag = Symbol2 ? Symbol2.toStringTag : void 0;
       function getRawTag(value2) {
-        var isOwn = hasOwnProperty2.call(value2, symToStringTag), tag = value2[symToStringTag];
+        var isOwn = hasOwnProperty.call(value2, symToStringTag), tag = value2[symToStringTag];
         try {
           value2[symToStringTag] = void 0;
           var unmasked = true;
@@ -1563,9 +1563,9 @@
       var funcProto = Function.prototype;
       var objectProto = Object.prototype;
       var funcToString = funcProto.toString;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       var reIsNative = RegExp(
-        "^" + funcToString.call(hasOwnProperty2).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"
+        "^" + funcToString.call(hasOwnProperty).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"
       );
       function baseIsNative(value2) {
         if (!isObject(value2) || isMasked(value2)) {
@@ -1650,14 +1650,14 @@
       var nativeCreate = require_nativeCreate();
       var HASH_UNDEFINED = "__lodash_hash_undefined__";
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function hashGet(key2) {
         var data2 = this.__data__;
         if (nativeCreate) {
           var result = data2[key2];
           return result === HASH_UNDEFINED ? void 0 : result;
         }
-        return hasOwnProperty2.call(data2, key2) ? data2[key2] : void 0;
+        return hasOwnProperty.call(data2, key2) ? data2[key2] : void 0;
       }
       module2.exports = hashGet;
     }
@@ -1668,10 +1668,10 @@
     "node_modules/lodash/_hashHas.js"(exports2, module2) {
       var nativeCreate = require_nativeCreate();
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function hashHas(key2) {
         var data2 = this.__data__;
-        return nativeCreate ? data2[key2] !== void 0 : hasOwnProperty2.call(data2, key2);
+        return nativeCreate ? data2[key2] !== void 0 : hasOwnProperty.call(data2, key2);
       }
       module2.exports = hashHas;
     }
@@ -2239,12 +2239,12 @@
       var baseIsArguments = require_baseIsArguments();
       var isObjectLike = require_isObjectLike();
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       var propertyIsEnumerable = objectProto.propertyIsEnumerable;
       var isArguments = baseIsArguments(function() {
         return arguments;
       }()) ? baseIsArguments : function(value2) {
-        return isObjectLike(value2) && hasOwnProperty2.call(value2, "callee") && !propertyIsEnumerable.call(value2, "callee");
+        return isObjectLike(value2) && hasOwnProperty.call(value2, "callee") && !propertyIsEnumerable.call(value2, "callee");
       };
       module2.exports = isArguments;
     }
@@ -2396,11 +2396,11 @@
       var isIndex = require_isIndex();
       var isTypedArray = require_isTypedArray();
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function arrayLikeKeys(value2, inherited) {
         var isArr = isArray(value2), isArg = !isArr && isArguments(value2), isBuff = !isArr && !isArg && isBuffer(value2), isType = !isArr && !isArg && !isBuff && isTypedArray(value2), skipIndexes = isArr || isArg || isBuff || isType, result = skipIndexes ? baseTimes(value2.length, String) : [], length2 = result.length;
         for (var key2 in value2) {
-          if ((inherited || hasOwnProperty2.call(value2, key2)) && !(skipIndexes && // Safari 9 has enumerable `arguments.length` in strict mode.
+          if ((inherited || hasOwnProperty.call(value2, key2)) && !(skipIndexes && // Safari 9 has enumerable `arguments.length` in strict mode.
           (key2 == "length" || // Node.js 0.10 has enumerable non-index properties on buffers.
           isBuff && (key2 == "offset" || key2 == "parent") || // PhantomJS 2 has enumerable non-index properties on typed arrays.
           isType && (key2 == "buffer" || key2 == "byteLength" || key2 == "byteOffset") || // Skip index properties.
@@ -2453,14 +2453,14 @@
       var isPrototype = require_isPrototype();
       var nativeKeys = require_nativeKeys();
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function baseKeys(object) {
         if (!isPrototype(object)) {
           return nativeKeys(object);
         }
         var result = [];
         for (var key2 in Object(object)) {
-          if (hasOwnProperty2.call(object, key2) && key2 != "constructor") {
+          if (hasOwnProperty.call(object, key2) && key2 != "constructor") {
             result.push(key2);
           }
         }
@@ -2514,7 +2514,7 @@
       var getAllKeys = require_getAllKeys();
       var COMPARE_PARTIAL_FLAG = 1;
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function equalObjects(object, other, bitmask, customizer, equalFunc, stack) {
         var isPartial = bitmask & COMPARE_PARTIAL_FLAG, objProps = getAllKeys(object), objLength = objProps.length, othProps = getAllKeys(other), othLength = othProps.length;
         if (objLength != othLength && !isPartial) {
@@ -2523,7 +2523,7 @@
         var index2 = objLength;
         while (index2--) {
           var key2 = objProps[index2];
-          if (!(isPartial ? key2 in other : hasOwnProperty2.call(other, key2))) {
+          if (!(isPartial ? key2 in other : hasOwnProperty.call(other, key2))) {
             return false;
           }
         }
@@ -2664,7 +2664,7 @@
       var arrayTag = "[object Array]";
       var objectTag = "[object Object]";
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function baseIsEqualDeep(object, other, bitmask, customizer, equalFunc, stack) {
         var objIsArr = isArray(object), othIsArr = isArray(other), objTag = objIsArr ? arrayTag : getTag(object), othTag = othIsArr ? arrayTag : getTag(other);
         objTag = objTag == argsTag ? objectTag : objTag;
@@ -2682,7 +2682,7 @@
           return objIsArr || isTypedArray(object) ? equalArrays(object, other, bitmask, customizer, equalFunc, stack) : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
         }
         if (!(bitmask & COMPARE_PARTIAL_FLAG)) {
-          var objIsWrapped = objIsObj && hasOwnProperty2.call(object, "__wrapped__"), othIsWrapped = othIsObj && hasOwnProperty2.call(other, "__wrapped__");
+          var objIsWrapped = objIsObj && hasOwnProperty.call(object, "__wrapped__"), othIsWrapped = othIsObj && hasOwnProperty.call(other, "__wrapped__");
           if (objIsWrapped || othIsWrapped) {
             var objUnwrapped = objIsWrapped ? object.value() : object, othUnwrapped = othIsWrapped ? other.value() : other;
             stack || (stack = new Stack());
@@ -3688,9 +3688,9 @@
     "node_modules/core-js/internals/has-own-property.js"(exports2, module2) {
       var uncurryThis = require_function_uncurry_this();
       var toObject = require_to_object();
-      var hasOwnProperty2 = uncurryThis({}.hasOwnProperty);
+      var hasOwnProperty = uncurryThis({}.hasOwnProperty);
       module2.exports = Object.hasOwn || function hasOwn(it, key2) {
-        return hasOwnProperty2(toObject(it), key2);
+        return hasOwnProperty(toObject(it), key2);
       };
     }
   });
@@ -15782,7 +15782,7 @@
       var funcProto = Function.prototype;
       var objectProto = Object.prototype;
       var funcToString = funcProto.toString;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       var objectCtorString = funcToString.call(Object);
       function isPlainObject(value2) {
         if (!isObjectLike(value2) || baseGetTag(value2) != objectTag) {
@@ -15792,7 +15792,7 @@
         if (proto === null) {
           return true;
         }
-        var Ctor = hasOwnProperty2.call(proto, "constructor") && proto.constructor;
+        var Ctor = hasOwnProperty.call(proto, "constructor") && proto.constructor;
         return typeof Ctor == "function" && Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString;
       }
       module2.exports = isPlainObject;
@@ -16677,7 +16677,7 @@
         }
         return keys;
       }
-      var hasOwnProperty2 = {}.hasOwnProperty;
+      var hasOwnProperty = {}.hasOwnProperty;
       function clone(obj) {
         if (Array.isArray(obj))
           return obj.slice();
@@ -16844,7 +16844,7 @@
         var omitList = Array.isArray(attrs) ? attrs : [attrs];
         var fDoSomething = false;
         for (var i = 0; i < omitList.length; i++) {
-          if (hasOwnProperty2.call(obj, omitList[i])) {
+          if (hasOwnProperty.call(obj, omitList[i])) {
             fDoSomething = true;
             break;
           }
@@ -18436,21 +18436,21 @@
       return false;
     }
     for (let i = 0; i < keysA.length; i++) {
-      if (
+      if (!Object.hasOwn(
+        objB,
         // @ts-expect-error - TS2345 - Argument of type 'string | undefined' is not assignable to parameter of type 'PropertyKey'.
-        !hasOwnProperty.call(objB, keysA[i]) || // @ts-expect-error - TS2538 - Type 'undefined' cannot be used as an index type. | TS2538 - Type 'undefined' cannot be used as an index type.
-        !is(objA[keysA[i]], objB[keysA[i]])
-      ) {
+        keysA[i]
+      ) || // @ts-expect-error - TS2538 - Type 'undefined' cannot be used as an index type. | TS2538 - Type 'undefined' cannot be used as an index type.
+      !is(objA[keysA[i]], objB[keysA[i]])) {
         return false;
       }
     }
     return true;
   }
-  var hasOwnProperty, shallowEqual_default;
+  var shallowEqual_default;
   var init_shallowEqual = __esm({
     "packages/systems/ix2/shared/logic/shallowEqual.ts"() {
       "use strict";
-      hasOwnProperty = Object.prototype.hasOwnProperty;
       shallowEqual_default = shallowEqual;
     }
   });
@@ -20063,10 +20063,10 @@
       var baseAssignValue = require_baseAssignValue();
       var eq = require_eq();
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function assignValue(object, key2, value2) {
         var objValue = object[key2];
-        if (!(hasOwnProperty2.call(object, key2) && eq(objValue, value2)) || value2 === void 0 && !(key2 in object)) {
+        if (!(hasOwnProperty.call(object, key2) && eq(objValue, value2)) || value2 === void 0 && !(key2 in object)) {
           baseAssignValue(object, key2, value2);
         }
       }
@@ -20172,14 +20172,14 @@
       var isPrototype = require_isPrototype();
       var nativeKeysIn = require_nativeKeysIn();
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function baseKeysIn(object) {
         if (!isObject(object)) {
           return nativeKeysIn(object);
         }
         var isProto = isPrototype(object), result = [];
         for (var key2 in object) {
-          if (!(key2 == "constructor" && (isProto || !hasOwnProperty2.call(object, key2)))) {
+          if (!(key2 == "constructor" && (isProto || !hasOwnProperty.call(object, key2)))) {
             result.push(key2);
           }
         }
@@ -20265,7 +20265,7 @@
       var mapTag = "[object Map]";
       var setTag = "[object Set]";
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function isEmpty2(value2) {
         if (value2 == null) {
           return true;
@@ -20281,7 +20281,7 @@
           return !baseKeys(value2).length;
         }
         for (var key2 in value2) {
-          if (hasOwnProperty2.call(value2, key2)) {
+          if (hasOwnProperty.call(value2, key2)) {
             return false;
           }
         }
@@ -21098,9 +21098,9 @@
     "node_modules/lodash/_getFuncName.js"(exports2, module2) {
       var realNames = require_realNames();
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function getFuncName(func) {
-        var result = func.name + "", array = realNames[result], length2 = hasOwnProperty2.call(realNames, result) ? array.length : 0;
+        var result = func.name + "", array = realNames[result], length2 = hasOwnProperty.call(realNames, result) ? array.length : 0;
         while (length2--) {
           var data2 = array[length2], otherFunc = data2.func;
           if (otherFunc == null || otherFunc == func) {
@@ -21179,13 +21179,13 @@
       var isObjectLike = require_isObjectLike();
       var wrapperClone = require_wrapperClone();
       var objectProto = Object.prototype;
-      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      var hasOwnProperty = objectProto.hasOwnProperty;
       function lodash(value2) {
         if (isObjectLike(value2) && !isArray(value2) && !(value2 instanceof LazyWrapper)) {
           if (value2 instanceof LodashWrapper) {
             return value2;
           }
-          if (hasOwnProperty2.call(value2, "__wrapped__")) {
+          if (hasOwnProperty.call(value2, "__wrapped__")) {
             return wrapperClone(value2);
           }
         }

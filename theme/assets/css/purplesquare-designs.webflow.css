@@ -1051,6 +1051,7 @@ figcaption {
 
 .text-field-home {
   color: var(--white-smoke);
+  -webkit-text-stroke-color: var(--white-smoke);
   background-color: rgba(0, 0, 0, 0);
   border: 1px #000;
   height: 50px;
@@ -1236,6 +1237,10 @@ figcaption {
   background-color: var(--purple);
   color: var(--white-smoke);
   text-align: center;
+}
+
+.success-message-3 {
+  background-color: var(--purple);
 }
 
 @media screen and (max-width: 991px) {

@@ -323,9 +323,9 @@ collections:
             label: Text
             name: '-58c0cad1'
             widget: string
-          - hint: 'Original text: 10, key: 61f'
+          - hint: 'Original text: 5, key: 35'
             label: Text
-            name: 61f
+            name: '35'
             widget: string
           - hint: 'Original text: +, key: 2b'
             label: Text
@@ -343,9 +343,9 @@ collections:
             label: Text
             name: 5291b6d5
             widget: string
-          - hint: 'Original text: 5, key: 35'
+          - hint: 'Original text: 10, key: 61f'
             label: Text
-            name: '35'
+            name: 61f
             widget: string
           - hint: 'Original text:  My , key: fbbb4'
             label: Text
@@ -383,9 +383,9 @@ collections:
             label: Text
             name: 2e01ae68
             widget: string
-          - hint: 'Original text: Some Of My , key: 783b52b7'
+          - hint: 'Original text: My , key: 12fd4'
             label: Text
-            name: 783b52b7
+            name: 12fd4
             widget: string
           - hint: 'Original text: Work, key: 293b31'
             label: Text
@@ -403,9 +403,9 @@ collections:
             label: Text
             name: 143cb
             widget: string
-          - hint: "Original text: \"Purple Square help and support during the on boarding\_\_was first class we couldn't have asked for more\", key: 303530c0"
+          - hint: "Original text: \"Lloyd's help and support during the on boarding\_\_was first class we couldn't have asked for more\", key: 6688b9c5"
             label: Text
-            name: 303530c0
+            name: 6688b9c5
             widget: text
           - hint: 'Original text: Susan Murray, key: 3f9e5082'
             label: Text
@@ -416,11 +416,11 @@ collections:
             name: '-36f8f3d4'
             widget: string
           - hint: >-
-              Original text: "Purple Square were a pleasure to work with and we
-              couldn't be happier with the finished result", key: 1d7d7757
+              Original text: "Lloyd was a pleasure to work with we couldn't be
+              happier with the finished result", key: -3128c211
             label: Text
-            name: 1d7d7757
-            widget: text
+            name: '-3128c211'
+            widget: string
           - hint: 'Original text: Glen Keys, key: -7195417a'
             label: Text
             name: '-7195417a'
@@ -430,11 +430,11 @@ collections:
             name: '3e421443'
             widget: string
           - hint: >-
-              Original text: "Purple Square's attention to detail and ability to
+              Original text: "Lloyd's attention to detail and his ability to
               understand my brand made them the perfect partner for my project.
-              Highly recommended!", key: 43fcf43c
+              Highly recommended!", key: f362247
             label: Text
-            name: 43fcf43c
+            name: f362247
             widget: text
           - hint: 'Original text: Robert Dobson, key: 4c220959'
             label: Text
@@ -468,11 +468,9 @@ collections:
             label: Text
             name: '84962e0'
             widget: string
-          - hint: >-
-              Original text: Thank you! Your submission has been received!, key:
-              5a0ea5a1
+          - hint: 'Original text: Thanks email has been sent., key: 63ab5c3'
             label: Text
-            name: 5a0ea5a1
+            name: 63ab5c3
             widget: string
           - hint: >-
               Original text: Oops! Something went wrong while submitting the
@@ -915,6 +913,12 @@ collections:
             label: Text
             name: 5f757fe3
             widget: string
+          - hint: >-
+              Original text: Thank you! Your submission has been received!, key:
+              5a0ea5a1
+            label: Text
+            name: 5a0ea5a1
+            widget: string
           - hint: 'Original text: This is Heading 1, key: 3bb9601f'
             label: Text
             name: 3bb9601f
@@ -990,10 +994,6 @@ collections:
           - hint: 'Original text: Tertiary - Default, key: -5d434900'
             label: Text
             name: '-5d434900'
-            widget: string
-          - hint: 'Original text: My , key: 12fd4'
-            label: Text
-            name: 12fd4
             widget: string
           - hint: 'Original text: work, key: 37c711'
             label: Text
