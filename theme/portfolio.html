@@ -48,12 +48,12 @@
   </div>
   <section class="section portfolio">
     <div class="container centered">
-      <h1>{{ texts.12fd4 }}<span class="work-line">{{ texts.37c711 }}</span></h1>
+      <h1>{{ texts.12fd4 }}<span class="work-line">{{ texts.293b31 }}</span></h1>
     </div>
     {%- assign collection = collections.portfolio | sort: "-created-on" -%}<div class="w-dyn-list">
       {%- unless collection.length == 0 -%}<div role="list" class="collection-list w-dyn-items">
         {%- for item in collection -%}<div role="listitem" class="collection-item dark-border w-dyn-item">
-          <a data-w-id="7bedf4d0-b9de-f333-c183-8560e8fa719c" href="{{ links.23 }}" class="portfolio-card w-inline-block"><img loading="lazy" data-w-id="7bedf4d0-b9de-f333-c183-8560e8fa719d" src="{{ item.data.f_image-1.url }}" alt="{{ images.0.alt | escape }}" class="portfolio-card-img">
+          <a data-w-id="7bedf4d0-b9de-f333-c183-8560e8fa719c" href="{{ item.url }}" class="portfolio-card w-inline-block"><img loading="lazy" data-w-id="7bedf4d0-b9de-f333-c183-8560e8fa719d" src="{{ item.data.f_image-1.url }}" alt="{{ images.0.alt | escape }}" class="portfolio-card-img">
             <div class="portfolio-title-wrapper">
               <h3 class="">{{ item.data.title }}</h3>
               <div data-w-id="7bedf4d0-b9de-f333-c183-8560e8fa71a0" class="project-type-title">{{ item.data.f_project-type }}</div>
@@ -87,7 +87,7 @@
       <div id="w-node-b15aafb0-8018-d555-1a02-d3f00622e302-0622e2e9" class="grid-block footer">
         <div class="footer-title">{{ texts.84962e0 }}</div>
         <div class="w-form">
-          <form id="wf-form-Email-Footer-Form" name="wf-form-Email-Footer-Form" data-name="email_footer" method="post" class="form home-hero" data-wf-page-id="65b7d7d1584ecc9f4e24f6e3" data-wf-element-id="b15aafb0-8018-d555-1a02-d3f00622e306" data-netlify="true" data-ajax="true" data-content-type="application/x-www-form-urlencoded"><input class="text-field-home w-input" maxlength="256" name="footer-email" data-name="footer-email" placeholder="Your email" type="email" id="footer-email"><input type="submit" data-wait="Please wait..." class="button-primary w-button" value="Submit"></form>
+          <form id="wf-form-Email-Footer-Form" name="wf-form-Email-Footer-Form" data-name="email_footer" method="post" netlify-honeypot="bot-field" class="form home-hero" data-wf-page-id="65b7d7d1584ecc9f4e24f6e3" data-wf-element-id="b15aafb0-8018-d555-1a02-d3f00622e306" data-netlify="true" data-ajax="true" data-content-type="application/x-www-form-urlencoded"><input class="text-field-home w-input" maxlength="256" name="footer-email" data-name="footer-email" placeholder="Your email" type="email" id="footer-email"><input type="submit" data-wait="Please wait..." class="button-primary w-button" value="Submit"></form>
           <div class="success-message-3 w-form-done">
             <div>{{ texts.63ab5c3 }}</div>
           </div>

@@ -995,10 +995,6 @@ collections:
             label: Text
             name: '-5d434900'
             widget: string
-          - hint: 'Original text: work, key: 37c711'
-            label: Text
-            name: 37c711
-            widget: string
           - hint: 'Original text: Search results, key: 7e85e19e'
             label: Text
             name: 7e85e19e
