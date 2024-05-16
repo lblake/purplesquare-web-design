@@ -1,6 +1,6 @@
 ---
 title: Safia
-f_project-type: Webflow Development
+f_project-type: Webflow Development & Figma
 slug: safia
 f_image-2:
   url: >-
@@ -14,9 +14,13 @@ f_image-1:
   url: >-
     https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f722_portfolio%204.png
   alt: null
-updated-on: '2024-04-25T14:59:39.858Z'
+updated-on: '2024-05-12T18:43:07.411Z'
 created-on: '2022-09-06T23:55:09.107Z'
-published-on: '2024-04-25T15:00:03.551Z'
+published-on: '2024-05-12T18:44:06.327Z'
+f_image-4:
+  url: >-
+    https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/663f9c7413e6407ad5e47361_safia.png
+  alt: null
 layout: '[portfolio].html'
 tags: portfolio
 ---

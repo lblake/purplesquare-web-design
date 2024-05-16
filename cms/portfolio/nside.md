@@ -1,6 +1,6 @@
 ---
 title: Nside
-f_project-type: Webflow Development
+f_project-type: Webflow Development & Figma
 f_image-3:
   url: >-
     https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f72b_portfolio%209.png
@@ -14,9 +14,13 @@ f_image-2:
   url: >-
     https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f726_portfolio%208.png
   alt: null
-updated-on: '2024-04-25T10:51:24.439Z'
+updated-on: '2024-05-12T18:43:40.538Z'
 created-on: '2022-09-06T23:56:18.085Z'
-published-on: '2024-04-25T15:00:03.551Z'
+published-on: '2024-05-12T18:44:06.327Z'
+f_image-4:
+  url: >-
+    https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/663f9d349080c505ea3d14f5_nside.png
+  alt: null
 layout: '[portfolio].html'
 tags: portfolio
 ---

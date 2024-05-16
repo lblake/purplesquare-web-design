@@ -175,6 +175,23 @@ collections:
             label: alt
             widget: string
             required: false
+      - hint: ''
+        name: f_image-4
+        label: Image 4
+        widget: object
+        required: false
+        fields:
+          - hint: ''
+            name: url
+            label: Image
+            widget: image
+            required: false
+            allow_multiple: false
+          - hint: Image Alt
+            name: alt
+            label: alt
+            widget: string
+            required: false
       - label: Tags
         widget: hidden
         name: tags
