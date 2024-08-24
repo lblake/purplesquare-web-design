@@ -1,5 +1,5 @@
 ---
-title: Search Results
+title: Results
 permalink: '{{ page.fileSlug }}/index.html'
 layout: search.html
 slug: search
