@@ -1322,7 +1322,7 @@ figcaption {
 .circle-wrapper {
   z-index: 99;
   position: absolute;
-  inset: 5% 20% auto auto;
+  inset: 5% 19% auto auto;
 }
 
 .text-field {
@@ -1548,6 +1548,10 @@ figcaption {
 
   .collection-list {
     grid-template-columns: 1fr;
+  }
+
+  .circle-text {
+    display: none;
   }
 }
 
