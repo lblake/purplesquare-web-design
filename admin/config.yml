@@ -501,6 +501,10 @@ collections:
             label: Text
             name: 15495b86
             widget: string
+          - hint: 'Original text: Sutton Directory, key: -49034d32'
+            label: Text
+            name: '-49034d32'
+            widget: string
           - hint: 'Original text: Get a free info pack, key: 84962e0'
             label: Text
             name: '84962e0'
@@ -636,6 +640,10 @@ collections:
           - hint: 'Original link: #, key: 23'
             label: Link
             name: '23'
+            widget: string
+          - hint: 'Original link: https://www.Sutton.org.uk/, key: -df2e278'
+            label: Link
+            name: '-df2e278'
             widget: string
       - label: Images
         name: images

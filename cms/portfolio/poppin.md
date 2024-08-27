@@ -3,23 +3,23 @@ title: Poppin
 f_project-type: Design & Webflow Development
 f_image-1:
   url: >-
-    https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f70e_portfolio%201.avif
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f70e_portfolio%201.avif
   alt: null
 f_image-3:
   url: >-
-    https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f721_portfolio%203.avif
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f721_portfolio%203.avif
   alt: null
 slug: poppin
 f_image-2:
   url: >-
-    https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f720_portfolio%202.avif
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f720_portfolio%202.avif
   alt: null
 updated-on: '2024-08-12T13:02:12.963Z'
 created-on: '2022-09-06T23:52:46.531Z'
 published-on: '2024-08-12T13:02:34.140Z'
 f_image-4:
   url: >-
-    https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/66ba076aabcc1051c170e1cd_poppin.avif
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/66ba076aabcc1051c170e1cd_poppin.avif
   alt: null
 layout: '[portfolio].html'
 tags: portfolio

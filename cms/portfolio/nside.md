@@ -3,23 +3,23 @@ title: Nside
 f_project-type: Webflow Development & Figma
 f_image-3:
   url: >-
-    https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f72b_portfolio%209.avif
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f72b_portfolio%209.avif
   alt: null
 slug: nside
 f_image-1:
   url: >-
-    https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f725_portfolio%207.png
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f725_portfolio%207.png
   alt: null
 f_image-2:
   url: >-
-    https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f726_portfolio%208.png
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f726_portfolio%208.png
   alt: null
 updated-on: '2024-08-12T13:01:56.510Z'
 created-on: '2022-09-06T23:56:18.085Z'
 published-on: '2024-08-12T13:02:34.140Z'
 f_image-4:
   url: >-
-    https://uploads-ssl.webflow.com/65b7d7d1584ecc9f4e24f6ed/66ba078d255a62f72ce0432d_nside.avif
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/66ba078d255a62f72ce0432d_nside.avif
   alt: null
 layout: '[portfolio].html'
 tags: portfolio
