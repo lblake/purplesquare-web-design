@@ -1,26 +1,27 @@
 ---
 title: Green Trees Initiative
-f_project-type: Web Design & Development
+f_project-type: Web Development & GSAP Animation
 f_image-3:
   url: >-
-    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f72e_portfolio%2012.avif
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/66f484e256e4d0f560f585f9_news.webp
   alt: null
 f_image-1:
   url: >-
-    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f72c_portfolio%2010.avif
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/66f481bfa268ae007405b4c2_home.webp
   alt: null
 slug: green-trees-initiative
 f_image-2:
   url: >-
-    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/65b7d7d1584ecc9f4e24f72d_portfolio%2011.avif
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/66f483e2240b9892d71110f6_about.webp
   alt: null
-updated-on: '2024-08-12T13:01:46.847Z'
+updated-on: '2024-12-24T16:16:12.202Z'
 created-on: '2022-09-06T23:57:28.577Z'
-published-on: '2024-08-12T13:02:34.140Z'
+published-on: '2024-12-24T16:16:23.498Z'
 f_image-4:
   url: >-
-    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/66ba07a38feb8a3efe6aeff6_green-trees.avif
+    https://cdn.prod.website-files.com/65b7d7d1584ecc9f4e24f6ed/66f485867619bda7b06bdb5b_donate.webp
   alt: null
+f_live-site: https://green-trees-initiative.webflow.io/
 layout: '[portfolio].html'
 tags: portfolio
 ---

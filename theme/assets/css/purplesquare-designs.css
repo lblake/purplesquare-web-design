@@ -6,6 +6,7 @@
   --white-smoke: #f8f8f8;
   --whitte-opacity: #f8f8f866;
   --purple: #6a57e3;
+  --white: white;
 }
 
 .w-layout-grid {
@@ -1219,6 +1220,11 @@ figcaption {
   color: var(--whitte-opacity);
   margin-bottom: 20px;
   font-size: 16px;
+  display: block;
+}
+
+.footer-link.is-hidden {
+  display: none;
 }
 
 .project-type-portfolio {
@@ -1358,7 +1364,7 @@ figcaption {
 }
 
 .budget {
-  background-color: var(--white-smoke);
+  background-color: var(--white);
   border-radius: 10px;
   display: block;
 }
@@ -1398,6 +1404,17 @@ figcaption {
   min-width: 100%;
   display: flex;
   overflow: visible;
+}
+
+.link {
+  background-color: var(--blue);
+  color: var(--white-smoke);
+}
+
+.live-link {
+  background-color: var(--blue);
+  color: var(--white-smoke);
+  padding: 10px;
 }
 
 @media screen and (max-width: 991px) {

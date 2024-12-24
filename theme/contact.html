@@ -19,7 +19,9 @@
   <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:regular,500,600"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="{{ settings.site.favicon | default: "/assets/images/favicon.png" }}" rel="shortcut icon" type="image/x-icon">
-  <link href="{{ settings.site.apple_touch_icon | default: "/assets/images/webclip.png" }}" rel="apple-touch-icon">
+  <link href="{{ settings.site.apple_touch_icon | default: "/assets/images/webclip.png" }}" rel="apple-touch-icon"><!--  [Attributes by Finsweet] Number Count
+<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-numbercount@1/numbercount.js"></script>
+  -->
   <script>
     document.addEventListener("DOMContentLoaded", function() { 
         const yearSpan = document.querySelector('.copy-year');
@@ -95,12 +97,12 @@
         <a href="{{ links.2f }}" class="footer-link">{{ texts.2268ff }}</a>
         <a href="{{ links.6ec07556 }}" class="footer-link">{{ texts.-45b0dad8 }}</a>
         <a href="{{ links.16bdc13e }}" aria-current="page" class="footer-link w--current">{{ texts.-64104400 }}</a>
-        <a href="{{ links.-df2e278 }}" class="footer-link">{{ texts.-49034d32 }}</a>
+        <a href="{{ links.-df2e278 }}" class="footer-link is-hidden">{{ texts.-49034d32 }}</a>
       </div>
       <div id="w-node-b15aafb0-8018-d555-1a02-d3f00622e302-0622e2e9" class="grid-block footer">
         <div class="footer-title">{{ texts.84962e0 }}</div>
         <div class="w-form">
-          <form id="wf-form-Email-Footer-Form" name="wf-form-Email-Footer-Form" data-name="email_footer" method="post" netlify-honeypot="bot-field" class="form home-hero" data-wf-page-id="65b7d7d1584ecc9f4e24f6e0" data-wf-element-id="b15aafb0-8018-d555-1a02-d3f00622e306" data-netlify="true" data-ajax="true" data-content-type="application/x-www-form-urlencoded"><input class="text-field-home w-input" maxlength="256" name="footer-email" data-name="footer-email" placeholder="Your email" type="email" id="footer-email"><input type="submit" data-wait="Please wait..." class="button-primary w-button" value="Submit"></form>
+          <form method="post" data-netlify="true" name="wf-form-Email-Footer-Form" data-name="email_footer" netlify-honeypot="bot-field" id="wf-form-Email-Footer-Form" class="form home-hero" data-wf-page-id="65b7d7d1584ecc9f4e24f6e0" data-wf-element-id="b15aafb0-8018-d555-1a02-d3f00622e306" data-ajax="true" data-content-type="application/x-www-form-urlencoded"><input class="text-field-home w-input" maxlength="256" name="footer-email" data-name="footer-email" placeholder="Your email" type="email" id="footer-email"><input type="submit" data-wait="Please wait..." class="button-primary w-button" value="Submit"></form>
           <div class="success-message-3 w-form-done">
             <div>{{ texts.63ab5c3 }}</div>
           </div>

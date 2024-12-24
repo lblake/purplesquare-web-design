@@ -192,6 +192,11 @@ collections:
             label: alt
             widget: string
             required: false
+      - hint: ''
+        name: f_live-site
+        label: Live Site
+        widget: string
+        required: false
       - label: Tags
         widget: hidden
         name: tags
@@ -587,6 +592,10 @@ collections:
             label: Text
             name: f95c31d
             widget: string
+          - hint: 'Original text: View Website, key: -6363d1e0'
+            label: Text
+            name: '-6363d1e0'
+            widget: string
           - hint: 'Original text: Search results, key: 7e85e19e'
             label: Text
             name: 7e85e19e
@@ -693,7 +702,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-795a5565'
+            name: '-15bc83cf'
             widget: object
             fields:
               - name: url
